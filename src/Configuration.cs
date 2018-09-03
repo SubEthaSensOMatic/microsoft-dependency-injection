@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using Unity.Injection;
 using Unity.Lifetime;
 using Unity.Microsoft.DependencyInjection.Lifetime;
+using Unity.Registration;
 
 namespace Unity.Microsoft.DependencyInjection
 {
