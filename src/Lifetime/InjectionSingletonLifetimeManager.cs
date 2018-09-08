@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading;
-using Unity.Exceptions;
+using Unity.Build.Policy;
 using Unity.Lifetime;
 
 namespace Unity.Microsoft.DependencyInjection.Lifetime
 {
-    public class InjectionSingletonLifetimeManager : LifetimeManager, IRequiresRecovery
+    public class InjectionSingletonLifetimeManager : LifetimeManager, IRequireRecovery
 
     {
         #region Fields
@@ -83,7 +83,7 @@ namespace Unity.Microsoft.DependencyInjection.Lifetime
         #endregion
 
 
-        #region IRequiresRecovery
+        #region IRequireRecovery
 
         /// <summary>
         /// A method that does whatever is needed to clean up
